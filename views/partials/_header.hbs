@@ -1,0 +1,31 @@
+<nav class="black">
+
+    <div class="nav-wrapper">
+      <a href="#" data-target="main-menu" class="button-collapse show-on-large sidenav-trigger"><i class="fa fa-bars"></i></a>
+    <div class="center"><img src="/img/Captura.PNG" width="110" height="80">
+      
+      <!-- SIDE MENU -->
+      <ul class="sidenav" id="main-menu">
+          {{#if user}}
+          {{else}}    
+          {{/if}}
+		 
+          <li>
+              <a href="/login"><i class="fa fa-cog"></i>go to backend</a>
+            </li>
+          <li>
+              <a href="/"><i class="fa fa-cog"></i>Home</a>
+            </li>
+            <li>
+              <a href="/about"><i class="fa fa-book"></i>About Us</a>
+            </li>
+            <li>
+              <a href="/contact"><i class="fa fa-book"></i>Contact Us</a>
+            </li>
+                 {{#if user}}
+            <li>
+          {{/if}}
+      </ul>
+    </div>
+  </div>
+</nav>

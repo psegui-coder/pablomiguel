@@ -1,0 +1,37 @@
+<h1>Muestras de restaurantes</h1>
+<div class="cartas">
+{{#if restaurants}}
+{{#each restaurants}}
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                </div>
+                <img class="images" src="{{image}}" width="400" height="225">
+                <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{name}}<i class="material-icons right">show more</i></span>
+                </div>
+                <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">{{name}}<i class="material-icons right">close</i></span>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Price</th>
+                            <th>Profesional Rating</th>
+                            <th>Phone</th>
+                        </tr>
+                        <tr>
+                            <th>{{name}}</th>
+                            <th>{{location}}</th>
+                            <th>{{price}}</th>
+                            <th>{{prating}}</th>
+                            <th>{{phone}}</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+    {{/each}}
+{{else}}
+    <p>Something's wrong</p>
+{{/if}}
+</div>
